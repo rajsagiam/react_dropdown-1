@@ -36,3 +36,61 @@
     transform: rotate(360deg);
   }
 }
+/* Reset some default styles */
+body, h1, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Basic styling for the app container */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+/* Styling for the title */
+h1 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Styling for the Dropdown component */
+.dropdown-container {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-button {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border: 1px solid #ccc;
+  border-top: none;
+  width: 100%;
+}
+
+.dropdown-list li {
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.dropdown-list li:hover {
+  background-color: #f2f2f2;
+}
